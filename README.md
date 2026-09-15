@@ -1,2 +1,2 @@
 # Python-Hangman-Game
-A simple game I created using Python, with the help of AI to assist me making a website for the interactive aspect.
+A simple hangman game about the valve universe I created using Python with a website for the interactive aspect.

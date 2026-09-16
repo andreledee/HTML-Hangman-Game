@@ -11,41 +11,36 @@
 <body>
 
 <h1>hangman.py</h1>
-<p>A guessing game about Valve game universe. Guess the word one letter at a time.</p>
+<p>A guessing game about valve games. Interactive HTML showcase.</p>
 
 <pre id="screen"></pre>
 
 <form id="guess-form">
-  <label for="guess">Guess a letter:</label>
+  <label for="guess">guess a letter:</label>
   <input id="guess" name="guess" maxlength="1" size="2" autocomplete="off" autofocus />
   <button type="submit">Enter</button>
 </form>
 
-<p><button type="button" id="new-game">New game</button></p>
+<p><button type="button" id="new-game">new game</button></p>
 
 <script>
 const WORDS = [
-  {word: "portal",    hint: "You fell into science"},
-  {word: "alyx",      hint: "Half-Life VR game"},
-  {word: "dota",      hint: "Defense of the Ancients"},
-  {word: "inferno",   hint: "Classic CS map"},
-  {word: "dusttwo",   hint: "Most played CS map ever"},
-  {word: "medic",     hint: "TF2 class that heals"},
+  {word: "portal",    hint: "science based puzzle game"},
+  {word: "alyx",      hint: "vr showcase"},
+  {word: "dota",      hint: "classic strategy"},
+  {word: "inferno",   hint: "classic CS map"},
+  {word: "dust2",   hint: "most played CS map ever"},
   {word: "heavy",     hint: "TF2's slowest class"},
   {word: "scout",     hint: "TF2's fastest class"},
-  {word: "engineer",  hint: "TF2 builder class"},
-  {word: "gordon",    hint: "Half-Life protagonist"},
-  {word: "glados",    hint: "Portal's evil AI"},
-  {word: "wheatley",  hint: "Portal 2 robot companion"},
-  {word: "chell",     hint: "Portal's silent protagonist"},
-  {word: "combine",   hint: "Half-Life 2 alien empire"},
-  {word: "gman",      hint: "Half-Life's iconic enemy"},
-  {word: "crowbar",   hint: "Gordon Freeman's weapon"},
-  {word: "aperture",  hint: "Portal's science company"},
-  {word: "blackmesa", hint: "Half-Life research facility"},
-  {word: "boomer",    hint: "L4D explosive special infected"},
-  {word: "smoker",    hint: "L4D tongue-grabbing infected"},
-  {word: "nuke",      hint: "My favorite map!"},
+  {word: "glados",    hint: "portal's evil ai"},
+  {word: "wheatley",  hint: "portal 2 robot friend"},
+  {word: "chell",     hint: "portal's silent protagonist"},
+  {word: "combine",   hint: "half-life 2 alien empire"},
+  {word: "gman",      hint: "half-life's iconic enemy"},
+  {word: "crowbar",   hint: "gordon freeman's weapon"},
+  {word: "aperture",  hint: "portal's science company"},
+  {word: "blackmesa", hint: "half-life research facility"},
+  {word: "nuke",      hint: "my favorite cs map"},
 ];
 
 const STAGES = [
